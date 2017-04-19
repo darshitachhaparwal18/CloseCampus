@@ -9,7 +9,7 @@ import org.springframework.jdbc.core.RowMapper;
 import com.psl.closecampus.entity.Employee;
 
 public class EmployeeRegisterDaoImpl implements IEmployeeRegisterDao {
-
+	//its predefined jdbc template
 	private JdbcTemplate jdbcTemplate;
 
 	public JdbcTemplate getJdbcTemplate() {

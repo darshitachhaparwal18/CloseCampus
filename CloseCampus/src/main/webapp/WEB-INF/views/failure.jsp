@@ -6,7 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
-Oooops... Unsuccessful!!!
+<body bgcolor="lightblue">
+<center><h1>Oooops... Unsuccessful!!!</h1><br>
+<a href="http://localhost:8080/CloseCampus/emp_register2" >Go to HomePage</a></center>
 </body>
 </html>

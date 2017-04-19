@@ -20,11 +20,16 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeService employeeService ;
 
-	@RequestMapping(value="/emp_register",method = RequestMethod.GET)
+	@RequestMapping(value="/",method = RequestMethod.GET)
+	public String showIndex(){
+		return "index";
+	}
+	
+	@RequestMapping(value="/emp_register2",method = RequestMethod.GET)
 	public String showHomePage(Model model){
 		System.out.println("I am inside showHomePage:");
 		model.addAttribute("employee", new Employee());
-		return "emp_register";
+		return "emp_register2";
 	}
 	
 	@RequestMapping(value="/employee/{mac_addr}",method=RequestMethod.GET)
@@ -38,7 +43,7 @@ public class EmployeeController {
 	
 
 
-	@RequestMapping(value="/emp_register",method = RequestMethod.POST)
+	@RequestMapping(value="/emp_register2",method = RequestMethod.POST)
 	public String registerEmployee(Model model,Employee employee,BindingResult result){
 		System.out.println("In am Inside Registration page: ");
 		model.addAttribute("employee", new Employee());

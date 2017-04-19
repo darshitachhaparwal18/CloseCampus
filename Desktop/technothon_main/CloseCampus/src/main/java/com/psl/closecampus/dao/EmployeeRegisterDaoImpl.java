@@ -11,7 +11,7 @@ import com.psl.closecampus.entity.Employee;
 public class EmployeeRegisterDaoImpl implements IEmployeeRegisterDao {
 
 	private JdbcTemplate jdbcTemplate;
-//hello
+
 	public JdbcTemplate getJdbcTemplate() {
 		
 		return jdbcTemplate;
